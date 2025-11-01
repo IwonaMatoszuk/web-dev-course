@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Study Dashboard</title>
+    <style>
+        /*8tiny styling so it's readable*/
+        body { font-family: system-ui, Arial, sans-serif; line-height: 1.5; margin: 2rem; }
+        header, footer, nav, main, section, article, aside { margin-bottom: 1.2rem; }
+        table { border-collapse: collapse; width: 100%; max-width: 600px; }
+        th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+        caption { text-align: left; font-weight: 600; margin-bottom: 0.4rem; }
+        aside { background: #f7f7f7; padding: 0.8rem; border-radius: 8px; }
+        nav a { margin-right: .5rem; }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Study Dashboard</h1>
+        <nav aria-label="Primary">
+            <a href="../day1/index.html">Day 1</a>
+            <a href="../day2/about.html">Day 2</a>
+            <a href="../day3/index.html">Day 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>A description list of definitions</h2>
+            <ul>
+                <li>HTML</li>
+                <p>HTML (HyperText Markup Language) is the 
+                    standard markup language used to structure web pages. 
+                    It is used to create various elements of a webpage/website 
+                    such as nav-bar, paragraphs, images, video, Forms, and more, 
+                    which are displayed in a web browser.</p>
+
+                <li>CSS</li>
+                <p>CSS stands for Cascading Style Sheets. It is a stylesheet 
+                    language used to style and enhance website presentation. 
+                    CSS is one of the three main components of a webpage, along 
+                    with HTML and JavaScript.</p>
+
+                <li>JavaScript</li>
+                <p>JavaScript is a versatile, dynamically typed programming 
+                    language that brings life to web pages by making them 
+                    interactive. It is used for building interactive web 
+                    applications, supports both client-side and server-side 
+                    development, and integrates seamlessly with HTML, CSS, 
+                    and a rich standard library.</p>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>My week</h2>
+            <table>
+                <caption>Weekly Study Plan</caption>
+                <thead>
+                    <tr>
+                        <th scop="col">Day</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Mon</th>
+                        <td>List practice</td>
+                        <td>Planned/Done</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tue</th>
+                        <td>Tables</td>
+                        <td>Planned/Done</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wed</th>
+                        <td>Semantic layout</td>
+                        <td>Planned/Done</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </section>
+
+        <aside>
+            <h2>Tips</h2>
+            <p>tip 1</p>
+            <p>tip 2</p>
+            <p>tip 3</p>
+        </aside>
+    </main>
+
+    <footer>
+        <small>@ 2025 Iwona Day 3</small>
+    </footer>
+</body>
+</html>

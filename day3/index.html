@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Day 3 - Lists, Tables & Semantics</title>
+    <style>
+        /*8tiny styling so it's readable*/
+        body { font-family: system-ui, Arial, sans-serif; line-height: 1.5; margin: 2rem; }
+        header, footer, nav, main, section, article, aside { margin-bottom: 1.2rem; }
+        table { border-collapse: collapse; width: 100%; max-width: 600px; }
+        th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+        caption { text-align: left; font-weight: 600; margin-bottom: 0.4rem; }
+        aside { background: #f7f7f7; padding: 0.8rem; border-radius: 8px; }
+        nav a { margin-right: .5rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Day 3: Lists, Tables & Semantic HTML</h1>
+        <nav aria-label="Primary">
+            <a href="../day1/index.html">Day 1</a>
+            <a href="../day2/about.html">Day 2</a>
+            <a href="./index.html" aria-current="page">Day 3</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Learning Checklist</h2>
+            <ul>
+                <li>Unordered, ordered, description lists
+                <li>Accessible tables with <code>caption</code>, <code>thead></code>, <code>scope</code></li>
+                <li>Semantic layout tags</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Top 3 Topics (Ordered List)</h2>
+            <ol>
+                <li>Semantic Html</li>
+                <li>Tables</li>
+                <li>Lists</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Key Terms (Description List)</h2>
+            <dl>
+                <dt>Semantic</dt>
+                <dd>Meaningful structure that helps humans and machines understand your page.</dd>
+                <dt>Accessibility</dt>
+                <dd>Making content usable for everyone, including screen reader users.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Study Plan Table</h2>
+            <table>
+                <caption>Weekly Study Plan</caption>
+                <thead>
+                    <tr>
+                        <th scop="col">Day</th>
+                        <th scope="col">Topic</th>
+                        <th scop="col">Time (min)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Mon</th>
+                        <td>List practice</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tue</th>
+                        <td>Tables</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wed</th>
+                        <td>Semantic layout</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td>-</td>
+                        <td>60</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Shopping List</h2>
+            <ul>
+                <li>Pen</li>
+                <li>Linear</li>
+                <li>Markers</li>
+                <li>Notebook</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Daily Requirements</h2>
+            <table>
+            <caption>Daily Tasks</caption>
+            <tbody>
+
+                <tr>
+                    <th scope="row">Work</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">House</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Rest</th>
+                    <td></td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h2>Today's Notes</h2>
+            <p>Use only one <code>&lt;h1&gt;</code> per page. Keep heading in order (<code>h1</code> → <code>h2</code> → <code>h3</code>...). Always include a <code>caption</code> for data tables. </p>
+        </article>
+
+        <article>
+            <h2>What I learned today</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque massa urna, luctus sit amet risus at, sagittis condimentum ante. Proin sed purus sed tellus tempus dapibus nec ut nulla. Etiam mi erat, efficitur sed tristique sed, tempus sed velit. </p>
+        </article>
+
+        <aside>
+            <h2>Tip</h2>
+            <p>Use keyboard navigation to test accessibility: <kbd>Tab</kbd> to move between links.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <small>@ 2025 Iwona - Day 3</small>
+    </footer>
+</body>
+</html>
