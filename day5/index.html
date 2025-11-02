@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <!--responsive viewport (critical for images and layout)-->
+    <meta name="viewport" conteny="width=device-width, initial-scale=1.0"/>
+    <title>Iwona - Mini Portfolio</title>
+    <meta name="description" content="Iwona's mini-portfolio with responsive layout, colors, fonts, and spacing." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header container">
+        <h1 class="brand">Iwona</h1>
+        <nav aria-label="Primary" class="nav">
+            <a href="../day1/index.html">Day 1</a>
+            <a href="../day2/about.html">Day 2</a>
+            <a href="../day3/index.html">Day 3</a>
+            <a href="../day4/about-styled.html">Day 4</a>
+            <a href="./index.html" aria-current="page">Day 5</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- HERO: image + intro. Stacks on mobile; 2 columns on wider screens -->
+        <section class="hero">
+            <img
+                class="profile-pic"
+                src="https://place-puppy.com/puppy/x:400/y:400"
+                alt="My lovely dog Coco"
+            />
+
+            <div class="intro">
+                <h2>Hello, I'm Iwona 👋</h2>
+                <p>I love nature, abstraction, and creating calm, beautiful web experiences.</p>
+                <ul class="bullets">
+                    <li>Learning full stack with a design first mindset</li>
+                    <li>Pastel (lavender-sage) aesthetics</li>
+                    <li>Mini projects shipped to GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <h3>Recent Work</h3>
+                <p>Semantic HTML, accessible tables, and clean navigation</p>
+            </article>
+            <article class="card">
+                <h3>Current focus</h3>
+                <p>Responsive CSS, typography, spacing scales, and layout.</p>
+            </article>
+            <article class="card">
+                <h3>Next Up</h3>
+                <p>Flexbox, Grid, and a simple portfolio homepage.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="container site-footer">
+        <small>&copy; 2025 Iwona -Day 5</small>
+    </footer>
+</body>
+</html>
