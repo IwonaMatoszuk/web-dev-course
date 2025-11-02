@@ -8,51 +8,79 @@
 /*page layout*/
 body {
 
-    font-family: system-ui, Arial, sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     line-height: 1.6;
-    background-color: #f9f9fb;
+    background-color: #faf9f9;
     color: #333;
     margin: 2rem;
+    /*Add a subtle gradient background in body*/
+    background: linear-gradient(to right, #f7e6f9, #e0f7fa)
 }
 
-/*navigation links*/
+/*header + navigation links*/
+.site-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 nav a {
-    color: #8a4b77;
+    color: #6a5acd;
     text-decoration: none;
-    margin-right: 1rem;
-    font-weight: 500; 
+    margin: 0 0.5rem;
+    font-weight: 600; 
 }
 
-nav a:hover {
+nav a:hover,
+nav a[aria-current="page"] {
     text-decoration: underline;
 }
 
-/*headings*/
+/*Main title*/
 .main-title {
-    color: #6a5acd;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    color: #5c4b8a;
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
 }
 
-/*paragraphs*/
-.note {
-    background-color: #e0f7fa;
-    padding: 0.8rem;
-    border-radius: 6px;
-    margin-top: 1rem;
-}
-.highlight {
-    background-color: #fff59d;
-    padding: 0.8rem;
-    border-radius:  6px;
-    margin-top: 1rem;
-
-}
-
-/*border around all section elements*/
-section {
-    border-radius: 10px;
-    border: 2px solid #5c4b8a;
+/*intro section*/
+.intro {
+    text-align: center;
+    background-color: #f0f0ff;
     padding: 1rem;
-    margin-top:1rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    /*Give the image a border matching your palette*/
+    border: 4px solid #bba8d1
+}
+
+
+/* lists*/
+.facts ul,
+.goals ol {
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+}
+
+.facts h2,
+.goals h2 {
+    color: #8a4b77;
+    margin-bottom: 0.5rem;
+}
+
+/*Add a hover effect to list items*/
+li:hover {
+    color: #6a5acd; cursor: pointer;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
 }
