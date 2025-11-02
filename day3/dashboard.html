@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Study Dashboard</title>
     <style>
-        /*8tiny styling so it's readable*/
+        /*tiny styling so it's readable*/
         body { font-family: system-ui, Arial, sans-serif; line-height: 1.5; margin: 2rem; }
         header, footer, nav, main, section, article, aside { margin-bottom: 1.2rem; }
         table { border-collapse: collapse; width: 100%; max-width: 600px; }
@@ -23,36 +23,23 @@
         <nav aria-label="Primary">
             <a href="../day1/index.html">Day 1</a>
             <a href="../day2/about.html">Day 2</a>
-            <a href="../day3/index.html">Day 3</a>
+            <a href="../day3/index.html" aria-current="page">Day 3</a>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>A description list of definitions</h2>
-            <ul>
-                <li>HTML</li>
-                <p>HTML (HyperText Markup Language) is the 
-                    standard markup language used to structure web pages. 
-                    It is used to create various elements of a webpage/website 
-                    such as nav-bar, paragraphs, images, video, Forms, and more, 
-                    which are displayed in a web browser.</p>
+            <h2>Core Web Definitions</h2>
+            <dl>
+                <dt><abbr title="HyperText Markup Language">HTML</abbr></dt>
+                <dd>Markup language that structures the content of web pages (headings, paragraphs, images, forms, etc.).</dd>
 
-                <li>CSS</li>
-                <p>CSS stands for Cascading Style Sheets. It is a stylesheet 
-                    language used to style and enhance website presentation. 
-                    CSS is one of the three main components of a webpage, along 
-                    with HTML and JavaScript.</p>
+                <dt><abbr title="Cascading Style Sheets">CSS</abbr></dt>
+                <dd>Stylesheet language that controls presentation (colors, layout, fonts, spacing, responsive design).</dd>
 
-                <li>JavaScript</li>
-                <p>JavaScript is a versatile, dynamically typed programming 
-                    language that brings life to web pages by making them 
-                    interactive. It is used for building interactive web 
-                    applications, supports both client-side and server-side 
-                    development, and integrates seamlessly with HTML, CSS, 
-                    and a rich standard library.</p>
-            </ul>
-
+                <dt><abbr title="JavaScript">JavaScript</abbr></dt>
+                <dd>Programming language that adds interactivity and logic to web pages. Runs in the browser (and on servers via Node.js).</dd>
+            </dl>
         </section>
 
         <section>
@@ -61,7 +48,7 @@
                 <caption>Weekly Study Plan</caption>
                 <thead>
                     <tr>
-                        <th scop="col">Day</th>
+                        <th scope="col">Day</th>
                         <th scope="col">Topic</th>
                         <th scope="col">Status</th>
                     </tr>
@@ -89,14 +76,16 @@
 
         <aside>
             <h2>Tips</h2>
-            <p>tip 1</p>
-            <p>tip 2</p>
-            <p>tip 3</p>
+            <ul>
+                <li>Use one <code>&lt;h1&gt;</code> per page and keep heading levels in order.</li>
+                <li>Tables should include a <code>&lt;caption&gt;</code> and proper <code>scope</code> on <code>&lt;th&gt;</code>.</li>
+                <li>For definitions, prefer <code>&lt;dl&gt;</code> → <code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> over lists of paragraphs.</li>
+            </ul>
         </aside>
     </main>
 
     <footer>
-        <small>@ 2025 Iwona Day 3</small>
+        <small>&copy; 2025 Iwona - Day 3</small>
     </footer>
 </body>
 </html>
